@@ -4,6 +4,123 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background"
     tools:context=".Signup_Activity">
+
+    <EditText
+        android:id="@+id/ETusername"
+        android:layout_width="164dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="104dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:gravity="left"
+        android:hint="Username"
+        android:inputType="textPersonName"
+        android:textColor="#FDFDFE"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ETemail" />
+
+    <EditText
+        android:id="@+id/ETpassword"
+        android:layout_width="164dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:gravity="left"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:textColor="#FDFDFE"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/BTNsignin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ETusername"
+        app:layout_constraintVertical_bias="0.024" />
+
+    <ImageView
+        android:id="@+id/IVlogo"
+        android:layout_width="210dp"
+        android:layout_height="175dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon" />
+
+    <Button
+        android:id="@+id/BTNsignin"
+        android:layout_width="233dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="44dp"
+        android:background="#22A6CB"
+        android:text="Sign up"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ETusername"
+        app:layout_constraintEnd_toStartOf="@+id/ETusername"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ETusername"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_portrait_black_24dp" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ETpassword"
+        app:layout_constraintEnd_toStartOf="@+id/ETpassword"
+        app:layout_constraintTop_toTopOf="@+id/ETpassword"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_vpn_key_black_24dp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ETemail"
+        app:layout_constraintEnd_toStartOf="@+id/ETemail"
+        app:layout_constraintHorizontal_bias="0.941"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/ETemail"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_email_black_24dp" />
+
+    <EditText
+        android:id="@+id/ETemail"
+        android:layout_width="164dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="104dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:gravity="left"
+        android:hint="Email "
+        android:inputType="textEmailAddress"
+        android:textColor="#FDFDFE"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/IVlogo" />
 
 </android.support.constraint.ConstraintLayout>
