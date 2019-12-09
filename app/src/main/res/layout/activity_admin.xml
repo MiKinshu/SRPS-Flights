@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminAct">
+
+    <EditText
+        android:id="@+id/ETcode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="code"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/ETairline"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ETairline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="airline"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/ETcode"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ETcode" />
+
+    <EditText
+        android:id="@+id/ETto"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="from"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/ETfrom"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ETcode" />
+
+    <EditText
+        android:id="@+id/ETfrom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="to"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/ETto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ETto" />
+
+    <EditText
+        android:id="@+id/ETarrival"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="arrival"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/ETdeparture"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ETdeparture" />
+
+    <EditText
+        android:id="@+id/ETdeparture"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="departure"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/ETarrival"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ETto" />
+
+    <EditText
+        android:id="@+id/ETdate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="date"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/ETcost"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ETcost" />
+
+    <EditText
+        android:id="@+id/ETcost"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="cost"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/ETdate"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ETdeparture" />
+
+    <Button
+        android:id="@+id/BTNaddFlight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Add Flight"
+        app:layout_constraintEnd_toStartOf="@+id/BTNdeleteflight"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ETcost" />
+
+    <EditText
+        android:id="@+id/ETairportname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/ETairportcode"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BTNaddFlight" />
+
+    <EditText
+        android:id="@+id/ETairportcode"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:ems="10"
+        android:hint="Code"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="@+id/ETairportname"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/ETairportname"
+        app:layout_constraintTop_toBottomOf="@+id/BTNdeleteflight"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/BTNaddairport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Airport"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/BTNdeleteairport"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ETairportname"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <Button
+        android:id="@+id/BTNdeleteflight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Delete flight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/BTNaddFlight"
+        app:layout_constraintTop_toBottomOf="@+id/ETdate" />
+
+    <Button
+        android:id="@+id/BTNdeleteairport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete Airport"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/BTNaddairport"
+        app:layout_constraintTop_toBottomOf="@+id/ETairportcode"
+        app:layout_constraintVertical_bias="0.048" />
+</android.support.constraint.ConstraintLayout>

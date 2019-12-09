@@ -24,6 +24,40 @@
         app:layout_constraintTop_toBottomOf="@+id/ETemail" />
 
     <EditText
+        android:id="@+id/ETage"
+        android:layout_width="164dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="104dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:gravity="left"
+        android:hint="Age"
+        android:inputType="textPersonName"
+        android:textColor="#FDFDFE"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ETpassword" />
+
+    <EditText
+        android:id="@+id/ETcontactno"
+        android:layout_width="164dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="104dp"
+        android:backgroundTint="#FFFFFF"
+        android:ems="10"
+        android:gravity="left"
+        android:hint="Mobile No"
+        android:inputType="textPersonName"
+        android:textColor="#FDFDFE"
+        android:textColorHint="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/BTNregister"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ETage"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
         android:id="@+id/ETpassword"
         android:layout_width="164dp"
         android:layout_height="41dp"
@@ -37,7 +71,7 @@
         android:inputType="textPersonName"
         android:textColor="#FDFDFE"
         android:textColorHint="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/BTNsignin"
+        app:layout_constraintBottom_toTopOf="@+id/BTNregister"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ETusername"
         app:layout_constraintVertical_bias="0.024" />
@@ -56,7 +90,7 @@
         app:srcCompat="@drawable/icon" />
 
     <Button
-        android:id="@+id/BTNsignin"
+        android:id="@+id/BTNregister"
         android:layout_width="233dp"
         android:layout_height="50dp"
         android:layout_marginStart="8dp"
@@ -66,7 +100,9 @@
         android:text="Sign up"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ETcontactno" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -94,6 +130,29 @@
         app:srcCompat="@drawable/ic_vpn_key_black_24dp" />
 
     <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ETage"
+        app:layout_constraintEnd_toStartOf="@+id/ETage"
+        app:layout_constraintTop_toTopOf="@+id/ETage"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_data_usage_black_24dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="41dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="@+id/ETcontactno"
+        app:layout_constraintEnd_toStartOf="@+id/ETcontactno"
+        app:layout_constraintTop_toTopOf="@+id/ETcontactno"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_contact_phone_black_24dp" />
+
+
+    <ImageView
         android:id="@+id/imageView"
         android:layout_width="41dp"
         android:layout_height="41dp"
@@ -111,7 +170,7 @@
         android:id="@+id/ETemail"
         android:layout_width="164dp"
         android:layout_height="41dp"
-        android:layout_marginTop="112dp"
+        android:layout_marginTop="52dp"
         android:layout_marginEnd="104dp"
         android:backgroundTint="#FFFFFF"
         android:ems="10"

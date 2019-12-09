@@ -58,34 +58,16 @@
         app:srcCompat="@drawable/icon" />
 
     <Button
-        android:id="@+id/BTNsignin"
+        android:id="@+id/BTNregister"
         android:layout_width="217dp"
         android:layout_height="46dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="16dp"
         android:background="#22A6CB"
         android:text="Sign in"
-        app:layout_constraintBottom_toTopOf="@+id/BTNforgotpassword"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <Button
-        android:id="@+id/BTNforgotpassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="28dp"
-        android:background="#0000"
-        android:text="Forgot password?"
-        android:textAllCaps="false"
-        android:textColor="#FFFFFF"
-        android:textStyle="italic"
-        android:visibility="visible"
         app:layout_constraintBottom_toTopOf="@+id/BTNsignup"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
