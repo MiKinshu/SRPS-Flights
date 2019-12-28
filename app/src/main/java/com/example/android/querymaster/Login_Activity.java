@@ -2,7 +2,6 @@ package com.example.android.querymaster;
 import static com.example.android.querymaster.MainActivity.RegUsers;
 import static com.example.android.querymaster.MainActivity.user;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Build;
 import android.support.annotation.RequiresApi;
@@ -14,12 +13,18 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 public class Login_Activity extends AppCompatActivity {
-
-    @Override
+    /*@Override
     public void onBackPressed() {
         Intent returnIntent = new Intent();
         setResult(Activity.RESULT_CANCELED, returnIntent);
         System.exit(1);
+    }*/
+    @Override
+    public void onBackPressed() {
+        Intent intent = new Intent(Intent.ACTION_MAIN);
+        intent.addCategory(Intent.CATEGORY_HOME);
+        intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        startActivity(intent);
     }
 
     @Override
