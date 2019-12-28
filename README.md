@@ -41,7 +41,7 @@ We are open to contributions. Contact me on [Facebook](https://www.facebook.com/
 * Raunak Rathour
 * Shubham 
 
-See also the list of [contributors](https://github.com/MiKinshu/SilverBook/graphs/contributors) who participated in the project.
+See also the list of [contributors](https://github.com/MiKinshu/SRPS-Flights/graphs/contributors) who participated in the project.
 
 ## Acknowledgements
 * I am thankful to my faculty at IIIT Allahabad for this awesome opportunity.
